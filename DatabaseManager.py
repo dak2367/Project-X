@@ -24,3 +24,6 @@ class DatabaseManager:
                 """
         )
         dbConnection.commit()
+
+    # def addUser(self, username, name, email, password):
+
