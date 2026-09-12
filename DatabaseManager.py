@@ -7,3 +7,20 @@ class DatabaseManager:
     # HELPER METHOD FOR CONNECTION
     def createConnection(self):
         return sqlite3.connect(self.databaseName)
+
+    def createTable(self):
+        dbConnection = self.createConnection
+        cursor = dbConnection.cursor()
+
+        cursor.execute(
+            """
+            CREATE TABLE IF NOT EXISTS users (
+                id INTEGER PRIMARY KEY
+                username TEXT
+                name TEXT
+                email TEXT
+                password TEXT
+                )
+                """
+        )
+        dbConnection.commit()
