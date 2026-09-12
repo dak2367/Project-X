@@ -8,4 +8,6 @@ uvicorn Program:app --reload
 
 npm run dev
 
-will run at : http://127.0.0.1:8000
+backend will run at : http://127.0.0.1:8000
+
+open this to view app: http://localhost:5173
