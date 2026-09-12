@@ -1,6 +1,5 @@
 from User import User
 from DatabaseManager import DatabaseManager
-import sqlite3
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
